@@ -1,4 +1,4 @@
-# In a new migration file (e.g., 0004_populate_reviews.py)
+
 from django.db import migrations
 
 def populate_reviews(apps, schema_editor):
@@ -34,7 +34,7 @@ def empty_reviews(apps, schema_editor):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("movies", "0003_review"),  # Ensure this matches the last migration
+        ("movies", "0003_review"), 
     ]
 
     operations = [
